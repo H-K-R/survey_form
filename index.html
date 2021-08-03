@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body id="main">
+
+    <header>
+      <div class="survey-header">
+        <h1 id="title">Cuisine quality evaluation Form</h1>
+        <p id="description">Thank you for taking your precious time to answer these questions!</p>
+      </div>
+    </header>
+  
+    <main>
+      <div class="survey-container">
+        <form id="survey-form">
+  
+          <!--         for name -->
+          <div class="survey-element" id="survey-name">
+            <label for="name" id="name-label">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+          </div>
+  
+          <!--         for email -->
+          <div class="survey-element" id="survey-email">
+            <label for="email" id="email-label">Email</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+          </div>
+  
+          <!--         for age -->
+          <div class="survey-element" id="survey-age">
+            <label for="number" id="number-label">Age (optional)</label>
+            <input type="number" id="number" placeholder="Age" min="1" max="200">
+          </div>
+  
+          <!--         for drop-down menu -->
+          <div class="survey-element" id="survey-dropdown">
+            <label id="survey-dropdown-1-label">Which option best describes your current status?</label>
+            <select>
+              <option value="" disabled selected>Select current status</option>
+              <option value="Student">Student</option>
+              <option value="Working full-time">Working full-time</option>
+              <option value="Working part-time">Working part-time</option>
+              <option value="Not working">Not working</option>
+              <option value="Retired">Retired</option>
+              <option value="Prefer not to answer">Prefer not to answer</option>
+            </select>
+          </div>
+  
+          <!--         for radio buttons -->
+          <div class="survey-element" id="survey-radio">
+            <label id="survey-radio-label">Would you recommend Cuisine to your friends?</label>
+            <label class="survey-radio-button" for="definitely">
+              <input type="radio" id="definitely" name="recommend" value="Definitely"> Definitely
+            </label>
+            <label class="survey-radio-button" for="maybe">
+              <input type="radio" id="maybe" name="recommend" value="Maybe"> Maybe
+            </label>
+            <label class="survey-radio-button" for="notsure">
+              <input type="radio" id="notsure" name="recommend" value="Not sure"> Not sure
+            </label>
+          </div>
+  
+          <!--         for drop-down menu -->
+          <div class="survey-element" id="dropdown">
+            <label id="survey-dropdown-2-label">What kind of dish do you like the most in our menu?</label>
+            <select>
+              <option value="" disabled selected>Select dish</option>
+              <option value="tomato">Tomato</option>
+              <option value="cream">Cream</option>
+              <option value="curry">Curry</option>
+              <option value="demiglace">Demiglace</option>
+              <option value="doria">Doria</option>
+              <option value="hotplate">Hot plate</option>
+              <option value="japanesestyle">Japanese style</option>
+              <option value="countrycustomised">Country-customised</option>
+              <option value="mixedflavours">Mixed flavours</option>
+            </select>
+          </div>
+  
+          <!--         for checkboxes -->
+          <div class="survey-element" id="survey-checkbox">
+            <label id="survey-checkbox-label">In which areas do you like us to improve to serve you better?</label>
+  
+            <label class="survey-checkbox-option" for="option-1">
+              <input type="checkbox" id="option-1" name="option-1" value="dish-color"> Dish color
+            </label>
+  
+            <label class="survey-checkbox-option" for="option-2">
+              <input type="checkbox" id="option-2" name="option-2" value="rice-flavour"> Rice flavour
+            </label>
+  
+            <label class="survey-checkbox-option" for="option-3">
+              <input type="checkbox" id="option-3" name="option-3" value="side-dish"> Side dish
+            </label>
+  
+            <label class="survey-checkbox-option" for="option-4">
+              <input type="checkbox" id="option-4" name="option-4" value="salad"> Salad
+            </label>
+  
+            <label class="survey-checkbox-option" for="option-5">
+              <input type="checkbox" id="option-5" name="option-5" value="sauce-flavour"> Sauce flavour
+            </label>
+  
+            <label class="survey-checkbox-option" for="option-6">
+              <input type="checkbox" id="option-6" name="option-6" value="staff-behaviour"> Staff behaviour
+            </label>
+          </div>
+  
+          <!--         for text area -->
+          <div class="survey-element" id="survey-text-area">
+            <label for="review" id="survey-text-area-label">We would love to hear more from you</label>
+            <textarea id="review" name="review" rows="7" placeholder="Give us your thoughts....."></textarea>
+          </div>
+  
+          <!--         Submit button -->
+          <div class="survey-element" id="survey-submit">
+            <input type="submit" id="submit" value="Send us">
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+
+
+  
+</html>
